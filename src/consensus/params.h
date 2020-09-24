@@ -228,6 +228,15 @@ struct Params {
     // The block number after which lelantus is accepted.
     int nLelantusStartBlock;
 
+    // The block number introducing evo sporks
+    int nEvoSporkStartBlock;
+
+    // The block number to stop using evo sporks
+    int nEvoSporkStopBlock;
+
+    // Key to sign spork txs
+    std::string evoSporkKeyID;
+
     // The block number when Bip39 was implemented in Zcoin
     int nMnemonicBlock;
 
